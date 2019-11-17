@@ -2773,7 +2773,7 @@ EOF
         light-mode is-snippet
         # Include all additional ices – after
         # stripping them from the possible: ''
-        ${(@us.|.)${ZPLG_EXTS[ice-mods]//\'\'/}}
+        ${(@s.|.)${ZPLG_EXTS[ice-mods]//\'\'/}}
     )
     nval_ices=(
             blockf silent lucid trackbinds cloneonly nocd run-atpull
